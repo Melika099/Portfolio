@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Puseletso Madisha — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- BACK TO TOP -->
+  <a href="#hero" id="back-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">PM<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-greeting"><span class="dot"></span> <span id="time-greeting">Available for Work</span></div>
+        <h1 class="hero-name">PUSELETSO<br><span class="cyan">MADISHA</span></h1>
+        <p class="hero-role">I BUILD <span id="typed-role"></span></p>
+        <p class="hero-desc">Front-end developer from South Africa crafting beautiful, responsive web experiences. Clean code. Creative design. Real impact.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-cyan"><i class="fas fa-eye"></i> View Work</a>
+          <a href="https://drive.google.com/file/d/1TjSHRRFqpphuAaity4DlilwuheIaubWS/view?usp=drive_link" target="_blank" class="btn btn-ghost"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="stat-n">6+</div><div class="stat-l">Projects Built</div></div>
+          <div><div class="stat-n">2+</div><div class="stat-l">Certifications</div></div>
+          <div><div class="stat-n">3+</div><div class="stat-l">Years Learning</div></div>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <div class="hero-img-inner">
+          <img src="images/pic2.jpg" alt="Puseletso Madisha">
+        </div>
+        <div class="hero-img-border"></div>
+        <div class="hero-img-tag">WEB DEV</div>
+        <div class="hero-socials">
+          <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/puseletso-madisha-736684246/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:puse.madisha@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://wa.me/0693498857" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container section-wrap">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="label-tag">About Me</div>
+          <h2 class="section-title">CRAFTING THE WEB<br>WITH PURPOSE</h2>
+          <p>My name is <strong>Puseletso Madisha</strong> — a passionate front-end developer with a love for clean design, interactive user experiences, and turning ideas into fast, beautiful websites.</p>
+          <p>I hold a <strong>Higher Certificate in Mobile Application and Web Development</strong> from Varsity College and completed the <strong>FNB Full Stack Development</strong> programme. I'm self-driven, creative, and always pushing to grow.</p>
+          <p>I believe great development is equal parts logic and design. Whether it's a landing page or a full web app, I bring both precision and creativity to every project.</p>
+          <div class="about-highlights">
+            <div class="highlight-item"><div class="h-label">Based In</div><div class="h-val">South Africa</div></div>
+            <div class="highlight-item"><div class="h-label">Focus</div><div class="h-val">Front-End</div></div>
+            <div class="highlight-item"><div class="h-label">Status</div><div class="h-val">Open To Work</div></div>
+            <div class="highlight-item"><div class="h-label">Remote</div><div class="h-val">Available</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="label-tag">Education & Training</div>
+          <div class="education-list">
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div>
+                <div class="edu-title">Higher Certificate — Mobile App & Web Development</div>
+                <div class="edu-sub">Varsity College</div>
+                <div class="edu-desc">HTML, CSS, JavaScript, React Native, Kotlin, UI/UX principles</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div>
+                <div class="edu-title">Full Stack Development Programme</div>
+                <div class="edu-sub">FNB × IT Varsity</div>
+                <div class="edu-desc">Python, JavaScript, web development fundamentals, industry practices</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-dot"></div>
+              <div>
+                <div class="edu-title">Continuous Self-Learning</div>
+                <div class="edu-sub">freeCodeCamp · The Odin Project · javascript.info</div>
+                <div class="edu-desc">Deepening JavaScript, modern CSS, and building real-world projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container section-wrap">
+      <div class="label-tag">Technical Skills</div>
+      <h2 class="section-title">WHAT I WORK WITH</h2>
+      <div class="skills-grid" id="skills-grid">
+        <div class="skill-card" data-level="90">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          <span class="sk-name">HTML5</span><span class="sk-lvl">Advanced</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="85">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          <span class="sk-name">CSS3</span><span class="sk-lvl">Advanced</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="60">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <span class="sk-name">JavaScript</span><span class="sk-lvl">Intermediate</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="65">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+          <span class="sk-name">React Native</span><span class="sk-lvl">Intermediate</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="65">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <span class="sk-name">Git & GitHub</span><span class="sk-lvl">Intermediate</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="30">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span class="sk-name">Python</span><span class="sk-lvl">Beginner</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="25">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+          <span class="sk-name">Kotlin</span><span class="sk-lvl">Beginner</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+        <div class="skill-card" data-level="55">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+          <span class="sk-name">Figma / UI</span><span class="sk-lvl">Intermediate</span>
+          <div class="sk-bar"><div class="sk-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container section-wrap">
+      <div class="label-tag">What I Offer</div>
+      <h2 class="section-title">SERVICES</h2>
+      <div class="services-grid">
+        <div class="svc-card">
+          <div class="svc-num">01</div>
+          <div class="svc-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Responsive, mobile-first websites built with clean HTML, CSS, and JavaScript. Fast, accessible, and stunning on every screen.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-num">02</div>
+          <div class="svc-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Mobile App UI</h3>
+          <p>Front-end interfaces for mobile apps using React Native. Smooth, intuitive layouts optimized for the best user experience.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-num">03</div>
+          <div class="svc-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>User-centred design thinking — wireframes, prototypes, and polished interfaces that balance beauty with functionality.</p>
+        </div>
+        <div class="svc-card">
+          <div class="svc-num">04</div>
+          <div class="svc-icon"><i class="fas fa-tools"></i></div>
+          <h3>Site Maintenance</h3>
+          <p>Ongoing updates, bug fixes, and performance improvements. I keep your website fast, secure, and up to date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container section-wrap">
+      <div class="projects-header">
+        <div>
+          <div class="label-tag">My Work</div>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+        </div>
+        <a href="https://github.com/Melika099" target="_blank" class="btn btn-ghost" style="font-size:0.78rem; padding:0.6rem 1.4rem;">All Repos <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="projects-grid">
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/ecomerce.png" alt="E-commerce Storefront" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-ecommerce.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span></div>
+            <h3>E-Commerce Storefront</h3>
+            <p>A fully designed online store front-end with product listings, cart UI, and responsive layout built from scratch.</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/weather.png" alt="Weather App" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-weather-app.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">JavaScript</span><span class="proj-tag">API</span><span class="proj-tag">CSS</span></div>
+            <h3>Weather App</h3>
+            <p>Real-time weather app using a public API. Search any city and get live temperature, conditions, and forecasts.</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/calculator.png" alt="Calculator" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-calculator.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span></div>
+            <h3>Calculator App</h3>
+            <p>A clean, fully functional calculator with keyboard support, smooth animations, and a dark modern UI.</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/Landing page.png" alt="Landing Page" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-landing-page.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">Responsive</span></div>
+            <h3>Business Landing Page</h3>
+            <p>A responsive, polished business landing page — designed mobile-first with smooth scroll and animations.</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/Login.png" alt="Login Form" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-login-ui.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span></div>
+            <h3>Login Form UI</h3>
+            <p>A polished authentication UI with form validation, animated input states, and clean user feedback.</p>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-img-wrap">
+            <img src="images/UI FinanceApp.png" alt="Finance UI" class="proj-img">
+            <div class="proj-overlay">
+              <a href="https://puseletso-finance-ui.netlify.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/Melika099" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span><span class="proj-tag">Mobile UI FinanceApp</span></div>
+            <h3>Finance App UI</h3>
+            <p>A sleek financeApp interface with clean layout, intuitive navigation, and modern design aesthetics.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container section-wrap">
+      <div class="label-tag">Get In Touch</div>
+      <h2 class="section-title">LET'S WORK TOGETHER</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>I'm actively looking for opportunities.</h3>
+          <p>Whether you have a role, a project, or just want to connect — send me a message and I'll get back to you quickly.</p>
+          <div class="contact-links">
+            <a href="mailto:puse.madisha@gmail.com" class="c-link">
+              <div class="c-icon"><i class="fas fa-envelope"></i></div>
+              <div><div class="c-label">Email</div><div class="c-val">puse.madisha@gmail.com</div></div>
+            </a>
+            <a href="https://www.linkedin.com/in/puseletso-madisha-736684246/" target="_blank" class="c-link">
+              <div class="c-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div><div class="c-label">LinkedIn</div><div class="c-val">Puseletso Madisha</div></div>
+            </a>
+            <a href="https://github.com/Melika099" target="_blank" class="c-link">
+              <div class="c-icon"><i class="fab fa-github"></i></div>
+              <div><div class="c-label">GitHub</div><div class="c-val">github.com/Melika099</div></div>
+            </a>
+            <a href="https://wa.me/0693498857" target="_blank" class="c-link">
+              <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+              <div><div class="c-label">WhatsApp</div><div class="c-val">+27 69 349 8857</div></div>
+            </a>
+            <div class="c-link" style="cursor:default;">
+              <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><div class="c-label">Location</div><div class="c-val">South Africa — Open to Remote</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="fg"><label>First Name</label><input type="text" id="cf-fname" placeholder="Jane" required></div>
+              <div class="fg"><label>Last Name</label><input type="text" id="cf-lname" placeholder="Smith" required></div>
+            </div>
+            <div class="form-row">
+              <div class="fg"><label>Email</label><input type="email" id="cf-email" placeholder="jane@company.com" required></div>
+              <div class="fg">
+                <label>Subject</label>
+                <select id="cf-subject">
+                  <option value="">Select a subject</option>
+                  <option>Job Opportunity</option>
+                  <option>Freelance Project</option>
+                  <option>Collaboration</option>
+                  <option>General Enquiry</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg"><label>Message</label><textarea id="cf-message" placeholder="Tell me about your project or opportunity..." required></textarea></div>
+            <button type="button" class="form-submit" id="form-btn" onclick="submitForm()">Send Message <i class="fas fa-paper-plane"></i></button>
+            <div id="form-success">✅ Message sent! I'll be in touch soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-copy">© 2025 Made with <span>♥</span> by <span>Puseletso Madisha</span></div>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/Melika099" target="_blank">GitHub</a>
+        <a href="https://drive.google.com/file/d/1TjSHRRFqpphuAaity4DlilwuheIaubWS/view?usp=drive_link" target="_blank">CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="JavaScript/script.js"></script>
+</body>
+</html>
